@@ -1,6 +1,7 @@
 #pragma once
-#include "Engine.h"
-#include "Scene.h"
+class Engine;
+class Scene;
+class Renderer;
 class Game
 {
 
@@ -22,4 +23,3 @@ protected:
 	Engine* m_engine{ nullptr };
 	Scene* m_scene{ nullptr };
 };
-

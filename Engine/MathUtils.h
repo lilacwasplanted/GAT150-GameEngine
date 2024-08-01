@@ -4,12 +4,12 @@
 namespace Math
 {
 
-	constexpr float Pi = 3.141592653589793f; // 180
-	constexpr float twoPi = 6.283185307179586f; // 360
-	constexpr float halfPi = 1.5707963267948966f; // 90
+	static constexpr float Pi = 3.141592653589793f; // 180
+	static constexpr float twoPi = 6.283185307179586f; // 360
+	static constexpr float halfPi = 1.5707963267948966f; // 90
 
-	inline float RadToDeg(float radians) { return radians * (180.0f / Pi); }
-	inline float DegToRad(float degrees) { return degrees * (Pi / 180.0f); }
+	constexpr float RadToDeg(float radians) { return radians * (180.0f / Pi); }
+	constexpr float DegToRad(float degrees) { return degrees * (Pi / 180.0f); }
 
 
 	inline float Sin(float radians) {

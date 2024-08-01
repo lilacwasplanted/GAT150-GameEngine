@@ -2,7 +2,7 @@
 #include "Transform.h"
 #include "Vector2.h"
 #include <string>
-#include "Model.h"
+#include "Renderer/Model.h"
 
 class Renderer;
 
@@ -13,7 +13,7 @@ class Actor
 public:
 	Actor() = default;
 	Actor(const Transform& transform) : m_transform{ transform } {}
-	Actor(const Transform& transform, Model* model) : m_model{model}{}
+	Actor(const Transform& transform, Model* model) : m_transform{ transform }, m_model { model } {}
 
 	virtual void Update(float dt);
 	virtual void Draw(Renderer& renderer);

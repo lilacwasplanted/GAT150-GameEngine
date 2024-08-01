@@ -16,15 +16,11 @@ bool Input::Initialize()
     return true;
 }
 
-void Input::ShutDown()
-{
+void Input::ShutDown(){
 
 }
 
-void Input::Update()
-{
-  
-
+void Input::Update(){
     //key input
     m_prevKeyState = m_keyState;
     const uint8_t* keyboardState = SDL_GetKeyboardState(nullptr);

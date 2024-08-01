@@ -12,16 +12,8 @@ int main(int argc, char* argv[])
 	unique_ptr<Engine> engine = make_unique<Engine>();
 	engine->Initialize();
 
-	cout << __FUNCTION__ << endl;
-#ifdef _DEBUG
-	cout << "debug\n";
-#endif
-
-	int i = 5;
-	assert(i == 5);
-
-	int* p = nullptr;
-	//assert(p != nullptr);
+	File::SetFilePath("assets");
+	cout << File::GetFilePath() << endl;
 
 
 	while (!engine->IsQuit()) {
