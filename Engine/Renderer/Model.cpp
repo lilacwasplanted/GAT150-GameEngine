@@ -1,5 +1,8 @@
 #include "Model.h"
-#include "C:\Users\sombr\Neumont College Of Computer Science\Year I\Summer\Intro To Game Programming\GAT150 GameEngine\Engine\Vector2.h"
+#include "C:\Users\sombr\Neumont College Of Computer Science\Year I\Summer\Intro To Game Programming\GAT150 GameEngine\Engine\Math\Vector2.h"
+#include "C:\Users\sombr\Neumont College Of Computer Science\Year I\Summer\Intro To Game Programming\GAT150 GameEngine\Engine\Math\Transform.h"
+#include "C:\Users\sombr\Neumont College Of Computer Science\Year I\Summer\Intro To Game Programming\GAT150 GameEngine\Engine\Renderer\Color.h"
+
 
 void Model::Draw(Renderer& renderer, const Transform& transform)
 {

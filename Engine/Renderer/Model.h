@@ -1,9 +1,9 @@
 #pragma once
-#include "C:\Users\sombr\Neumont College Of Computer Science\Year I\Summer\Intro To Game Programming\GAT150 GameEngine\Engine\Vector2.h"
+#include "Math/Vector2.h"
 #include <vector>
 #include "Renderer.h"
-#include "C:\Users\sombr\Neumont College Of Computer Science\Year I\Summer\Intro To Game Programming\GAT150 GameEngine\Engine\Transform.h"
-#include "C:\Users\sombr\Neumont College Of Computer Science\Year I\Summer\Intro To Game Programming\GAT150 GameEngine\Engine\Color.h"
+#include "Math/Transform.h"
+#include "Renderer/Color.h"
 
 class Model
 {

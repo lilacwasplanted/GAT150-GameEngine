@@ -1,8 +1,9 @@
 #pragma once
-#include "Transform.h"
-#include "Vector2.h"
-#include <string>
+#include "Math/Transform.h"
+#include "Math/Vector2.h"
 #include "Renderer/Model.h"
+#include <string>
+
 
 class Renderer;
 

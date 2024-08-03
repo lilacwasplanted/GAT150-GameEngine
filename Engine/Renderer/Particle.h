@@ -1,5 +1,5 @@
 #pragma once
-#include "C:\Users\sombr\Neumont College Of Computer Science\Year I\Summer\Intro To Game Programming\GAT150 GameEngine\Engine\Vector2.h"
+#include "Math/Vector2.h"
 #include "Renderer.h"
 
 using namespace std;

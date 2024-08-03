@@ -1,10 +1,10 @@
 #pragma once
+//** Core **
 #include "Core/ETime.h"
 #include "Core/EAssert.h"
 #include "Core/EFile.h"
 
-
-
+//** Renderer **
 #include "Renderer/Renderer.h"
 #include "Renderer/Particle.h"
 //#include "ParticleSystem.h"
@@ -12,31 +12,30 @@
 //#include "Font.h"
 #include"Renderer/Model.h"
 
-
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
-
 //** Input **
-#include "Input.h"
+#include "Input/Input.h"
 
 //** Audio **
 #include "Audio/Audio.h"
 
 //** Math **
-#include "Vector2.h"
-#include "Random.h"
-#include "MathUtils.h"
-#include "Transform.h"
+#include "Math/Vector2.h"
+#include "Math/Random.h"
+#include "Math/MathUtils.h"
+#include "Math/Transform.h"
+
 //** Framework **
-#include "Actor.h"
-#include "Scene.h"
-#include "Game.h"
+#include "Framework/Actor.h"
+#include "Framework/Scene.h"
+#include "Framework/Game.h"
 
 #include <fmod.hpp>
 #include <SDL.h>
 #include <memory>
 #include <cassert>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 
 #define RENDERER g_engine.GetRenderer()
