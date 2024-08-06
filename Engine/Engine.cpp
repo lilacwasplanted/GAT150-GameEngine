@@ -17,7 +17,7 @@ bool Engine::Initialize()
     m_input->Initialize();
     m_audio->Initialize();
 
-    m_time = std::make_unique<Time>();
+    m_time =   make_unique<Time>();
 
     return true;
 }

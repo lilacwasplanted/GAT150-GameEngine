@@ -1,10 +1,12 @@
 #pragma once
 #include <list>
-
+#include <memory>
 
 class Game;
 class Actor;
 class Renderer;
+
+using namespace std;
 
 class Scene
 {
@@ -14,7 +16,7 @@ public:
 
 	void Update(float dt);
 	void Draw(Renderer& renderer);
-	void AddActor(Actor* actor);
+	void AddActor(unique_ptr<Actor> actor);
 	void RemoveAll();
 
 
@@ -26,7 +28,7 @@ public:
 
 protected:
 	Game* m_game{ nullptr };
-	std::list <Actor*> m_actors;
+	list <unique_ptr<Actor>> m_actors;
 
 
 
@@ -35,8 +37,8 @@ protected:
 
 template<typename T>
 T* Scene::GetActor() {
-	for (Actor* actor : m_actors) {
-		T* result = dynamic_cast<T*>(actor);
+	for (auto& actor : m_actors) {
+		T* result = dynamic_cast<T*>(actor.get());
 		if (result) return result;
 	}
 	return nullptr;

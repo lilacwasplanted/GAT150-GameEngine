@@ -84,6 +84,21 @@
     <ClInclude Include="Renderer\Color.h">
       <Filter>Source\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="Renderer\Texture.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceManager.h">
+      <Filter>Source\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Singleton.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine.cpp">
@@ -121,6 +136,12 @@
     </ClCompile>
     <ClCompile Include="Input\Input.cpp">
       <Filter>Source\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Texture.cpp">
+      <Filter>Source\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

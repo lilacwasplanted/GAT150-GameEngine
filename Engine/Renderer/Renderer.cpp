@@ -1,5 +1,7 @@
 #include "Renderer.h"
 #include <iostream>
+#include <SDL_image.h>
+#include "Texture.h"
 
 using namespace std;
 
@@ -12,12 +14,20 @@ bool Renderer::Initialize()
 		return 1;
 	}
 
+
+	// initialize Image SDL, supports BMP, JPG, and PNG
+	if (IMG_Init(IMG_INIT_JPG | IMG_INIT_PNG) == 0)
+	{
+		  cerr << "Error initializing SDL Image: " << SDL_GetError() <<   endl;
+		return false;
+	}
+
 	return true;
 }
 
 void Renderer::ShutDown()
 {
-
+	IMG_Quit();
 }
 
 bool Renderer::CreateWindow(string title, int width, int height)
@@ -89,3 +99,17 @@ void Renderer::DrawRect(float x, float y, float w, float h)
 }
 
 
+void Renderer::DrawTexture(Texture* texture, float x, float y, float angle)
+{
+	
+	Vector2 size = texture->GetSize();
+
+	SDL_FRect destRect;
+	destRect.x = x;
+	destRect.y = y;
+	destRect.w = size.x;
+	destRect.h = size.y;
+
+	// https://wiki.libsdl.org/SDL2/SDL_RenderCopyExF
+	SDL_RenderCopyExF(m_renderer, texture->m_texture, NULL, &destRect, angle, NULL, SDL_FLIP_NONE);
+}

@@ -23,7 +23,9 @@
     <ClInclude Include="Core\EAssert.h" />
     <ClInclude Include="Core\EFile.h" />
     <ClInclude Include="Core\ETime.h" />
+    <ClInclude Include="Core\Singleton.h" />
     <ClInclude Include="Engine.h" />
+    <ClInclude Include="Font.h" />
     <ClInclude Include="Framework\Actor.h" />
     <ClInclude Include="Framework\Game.h" />
     <ClInclude Include="Framework\Scene.h" />
@@ -36,6 +38,9 @@
     <ClInclude Include="Renderer\Model.h" />
     <ClInclude Include="Renderer\Particle.h" />
     <ClInclude Include="Renderer\Renderer.h" />
+    <ClInclude Include="Renderer\Texture.h" />
+    <ClInclude Include="Resource\Resource.h" />
+    <ClInclude Include="Resource\ResourceManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Audio\Audio.cpp" />
@@ -43,6 +48,7 @@
     <ClCompile Include="Core\EFile.cpp" />
     <ClCompile Include="Core\ETime.cpp" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Font.cpp" />
     <ClCompile Include="Framework\Actor.cpp" />
     <ClCompile Include="Framework\Game.cpp" />
     <ClCompile Include="Framework\Scene.cpp" />
@@ -50,6 +56,7 @@
     <ClCompile Include="Renderer\Model.cpp" />
     <ClCompile Include="Renderer\Particle.cpp" />
     <ClCompile Include="Renderer\Renderer.cpp" />
+    <ClCompile Include="Renderer\Texture.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -132,7 +139,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>sdl2.lib;sdl2main.lib;fmod_vc.lib</AdditionalDependencies>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;fmod_vc.lib;sdl2_image.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\SDL2\lib\$(PlatformTarget);$(SolutionDir)ThirdParty\fmod\core\lib\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
@@ -157,7 +164,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>sdl2.lib;sdl2main.lib;fmod_vc.lib</AdditionalDependencies>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;fmod_vc.lib;sdl2_image.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\SDL2\lib\$(PlatformTarget);$(SolutionDir)ThirdParty\fmod\core\lib\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
@@ -178,7 +185,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>sdl2.lib;sdl2main.lib;fmod_vc.lib</AdditionalDependencies>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;fmod_vc.lib;sdl2_image.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\SDL2\lib\$(PlatformTarget);$(SolutionDir)ThirdParty\fmod\core\lib\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
@@ -203,7 +210,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>sdl2.lib;sdl2main.lib;fmod_vc.lib</AdditionalDependencies>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;fmod_vc.lib;sdl2_image.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\SDL2\lib\$(PlatformTarget);$(SolutionDir)ThirdParty\fmod\core\lib\$(PlatformTarget);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>

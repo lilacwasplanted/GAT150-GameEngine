@@ -1,7 +1,9 @@
 #pragma once
 #include <SDL.h>
 #include <string>
+#include "Texture.h"
 using namespace std;
+
 class Renderer
 {
 public:
@@ -24,8 +26,18 @@ public:
 
 	void DrawRect(int x, int y, int w, int h);
 	void DrawRect(float x, float y, float w, float h);
-private:
-	SDL_Window* m_window;
-	SDL_Renderer* m_renderer;
+	
+	void DrawTexture(Texture* texture, float x, float y, float angle = 0);
+
+	friend class Texture;
+	friend class Renderer;
+
+
+protected:
+	SDL_Window* m_window{nullptr};
+	SDL_Renderer* m_renderer{ nullptr };
 };
+ 
+
+
 

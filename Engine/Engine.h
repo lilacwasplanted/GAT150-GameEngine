@@ -11,6 +11,7 @@
 //#include "Text.h"
 //#include "Font.h"
 #include"Renderer/Model.h"
+#include "Renderer/Texture.h"
 
 //** Input **
 #include "Input/Input.h"
@@ -28,6 +29,10 @@
 #include "Framework/Actor.h"
 #include "Framework/Scene.h"
 #include "Framework/Game.h"
+
+//** Resource ** 
+#include "Resource/ResourceManager.h"
+#include "Resource/Resource.h"
 
 #include <fmod.hpp>
 #include <SDL.h>
@@ -61,8 +66,8 @@ public:
 
 private:
 	bool quit{ false };
-	std::unique_ptr<Time> m_time;
-	std::unique_ptr<Renderer> m_renderer;
+	  unique_ptr<Time> m_time;
+	  unique_ptr<Renderer> m_renderer;
 	Input* m_input{ nullptr };
 	Audio* m_audio{ nullptr };
 };
