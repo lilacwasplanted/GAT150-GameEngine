@@ -1,38 +1,43 @@
 #pragma once
 //** Core **
-#include "Core/ETime.h"
-#include "Core/EAssert.h"
-#include "Core/EFile.h"
+#include "../Engine/Source/Core/ETime.h"
+#include "../Engine/Source/Core/EAssert.h"
+#include "../Engine/Source/Core/EFile.h"
 
 //** Renderer **
-#include "Renderer/Renderer.h"
-#include "Renderer/Particle.h"
+#include "../Engine/Source/Renderer/Renderer.h"
+#include "../Engine/Source/Renderer/Particle.h"
 //#include "ParticleSystem.h"
 //#include "Text.h"
-//#include "Font.h"
-#include"Renderer/Model.h"
-#include "Renderer/Texture.h"
+#include "../Engine/Source/Renderer/Font.h"
+#include "../Engine/Source/Renderer/Model.h"
+#include "../Engine/Source/Renderer/Texture.h"
 
 //** Input **
-#include "Input/Input.h"
+#include "../Engine/Source/Input/Input.h"
 
 //** Audio **
-#include "Audio/Audio.h"
+#include "../Engine/Source/Audio/Audio.h"
 
 //** Math **
-#include "Math/Vector2.h"
-#include "Math/Random.h"
-#include "Math/MathUtils.h"
-#include "Math/Transform.h"
+#include "../Engine/Source/Math/Vector2.h"
+#include "../Engine/Source/Math/Random.h"
+#include "../Engine/Source/Math/MathUtils.h"
+#include "../Engine/Source/Math/Transform.h"
 
 //** Framework **
-#include "Framework/Actor.h"
-#include "Framework/Scene.h"
-#include "Framework/Game.h"
+#include "../Engine/Source/Framework/Actor.h"
+#include "../Engine/Source/Framework/Scene.h"
+#include "../Engine/Source/Framework/Game.h"
 
 //** Resource ** 
-#include "Resource/ResourceManager.h"
-#include "Resource/Resource.h"
+#include "../Engine/Source/Resource/ResourceManager.h"
+#include "../Engine/Source/Resource/Resource.h"
+
+//** Component **
+#include "../Engine/Source/Components/Component.h"
+#include "../Engine/Source/Components/RendererComponent.h"
+#include "../Engine/Source/Components/TextureComponent.h"
 
 #include <fmod.hpp>
 #include <SDL.h>
